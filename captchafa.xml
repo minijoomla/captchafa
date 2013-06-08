@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="captcha">
 	<name>plg_captcha_captchafa</name>
-	<version>3.1.1</version>
+	<version>1.0</version>
 	<creationDate>May 2013</creationDate>
 	<author>Mohammad Hasani Eghtedar</author>
 	<authorEmail>m.h.eghtedar@gmail.com</authorEmail>
