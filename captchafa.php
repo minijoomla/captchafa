@@ -131,7 +131,7 @@ class PlgCaptchaCaptchafa extends JPlugin
 		{
 			if($answers[0] == 'invalid query! please retry')
 			{
-				$answers[1] = 'INVALID-REQUEST-COOKIE';
+				$answers[1] = 'INVALID-QUERY';
 			}
 
 			switch($answers[1])
