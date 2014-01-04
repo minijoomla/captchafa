@@ -3,7 +3,7 @@
  * @package     Joomla.Plugin
  * @subpackage  Captcha
  *
- * @copyright   Copyright (C) 2005 - 2013 Open Source Matters, Inc. All rights reserved.
+ * @copyright   Copyright (C) 2013 - 2014 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
@@ -11,7 +11,7 @@ defined('_JEXEC') or die;
 
 /**
  * CaptchaFa Plugin.
- * Based on the oficial captcha library( http://captchafa.com/captchafa_php.php )
+ * Based on the oficial captcha library ( http://captchafa.net/ )
  *
  * @package     Joomla.Plugin
  * @subpackage  Captcha
@@ -19,8 +19,8 @@ defined('_JEXEC') or die;
  */
 class PlgCaptchaCaptchafa extends JPlugin
 {
-	const CAPTCHAFA_API_SERVER    = "http://www.captchafa.com/api";
-	const CAPTCHAFA_VERIFY_SERVER = "www.captchafa.com";
+	const CAPTCHAFA_API_SERVER    = "http://www.captchafa.net/Api";
+	const CAPTCHAFA_VERIFY_SERVER = "www.captchafa.net";
 
 	/**
 	 * Load the language file on instantiation.
@@ -72,7 +72,7 @@ class PlgCaptchaCaptchafa extends JPlugin
 		$pubkey = $this->params->get('public_key', '');
 		$server = self::CAPTCHAFA_API_SERVER;
 
-		return '<script type="text/javascript" src="'. $server . '/?challenge&k=' . $pubkey . '"></script>';
+		return '<script type="text/javascript" src="'. $server . '/challenge/k=' . $pubkey . '"></script>';
 	}
 
 	/**
@@ -112,7 +112,7 @@ class PlgCaptchaCaptchafa extends JPlugin
 		}
 
 		$response = $this->_captchafa_http_post(
-			self::CAPTCHAFA_VERIFY_SERVER, "/api/verify/",
+			self::CAPTCHAFA_VERIFY_SERVER, "/Api/verify",
 			array(
 				'privatekey' => $privatekey,
 				'remoteip'   => $remoteip,

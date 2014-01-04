@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="3.1" type="plugin" group="captcha" method="upgrade">
 	<name>plg_captcha_captchafa</name>
-	<version>1.0</version>
+	<version>2.0</version>
 	<creationDate>May 2013</creationDate>
 	<author>Mohammad Hasani Eghtedar</author>
 	<authorEmail>m.h.eghtedar@gmail.com</authorEmail>
-	<authorUrl>www.mhehm.ir</authorUrl>
-	<copyright>Copyright (C) 2005 - 2013 Open Source Matters. All rights reserved.</copyright>
+	<authorUrl>www.behineweb.com</authorUrl>
+	<copyright>Copyright (C) 2013 - 2014 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
 	<description>PLG_CAPTCHA_CAPTCHAFA_XML_DESCRIPTION</description>
 	<files>
-		<filename plugin="CAPTCHAFA">captchafa.php</filename>
+		<filename plugin="captchafa">captchafa.php</filename>
 	</files>
 	<languages folder="language">
 		<language tag="en-GB">en-GB/en-GB.plg_captcha_captchafa.ini</language>
@@ -24,21 +24,17 @@
 				<field
 					name="public_key"
 					type="text"
-					default=""
 					label="PLG_CAPTCHAFA_PUBLIC_KEY_LABEL"
 					description="PLG_CAPTCHAFA_PUBLIC_KEY_DESC"
 					required="true"
-					filter="string"
-					size="50" />
+					filter="string" />
 				<field
 					name="private_key"
 					type="text"
-					default=""
 					label="PLG_CAPTCHAFA_PRIVATE_KEY_LABEL"
 					description="PLG_CAPTCHAFA_PRIVATE_KEY_DESC"
 					required="true"
-					filter="string"
-					size="50" />
+					filter="string" />
 			</fieldset>
 		</fields>
 	</config>
