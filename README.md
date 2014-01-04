@@ -12,11 +12,15 @@
 
 سازگار با جوملا 2.5 و 3
 
-سایت کپچافا: http://www.captchafa.com
+سایت کپچافا: http://www.captchafa.net
+
+سایت طراح پلاگین: http://www.behineweb.com
 
 ------------------------------
 
 CaptchaFa
 =========
 
-This Captcha plugin works with any Joomla extension capable of using the Joomla core captcha plugin system. It uses the CaptchaFa system from http://www.captchafa.com that uses Farsi alphabets.
+This Captcha plugin works with any Joomla extension capable of using the Joomla core captcha plugin system. It uses the CaptchaFa system from http://www.captchafa.net that uses Farsi alphabets.
+
+http://extensions.joomla.org/extensions/access-a-security/site-security/captcha/24543
