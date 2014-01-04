@@ -66,7 +66,7 @@ class PlgCaptchaCaptchafa extends JPlugin
 	public function onDisplay($name, $id, $class)
 	{
 		$document = JFactory::getDocument();
-		$style    = '.captchafatable #table { direction: rtl !important; text-align: right !important; top: 20px !important; }';
+		$style    = '.captchafatable{direction:ltr !important} .captchafa_input_area input{direction:rtl !important; text-align:right !important}';
 		$document->addStyleDeclaration($style);
 
 		$pubkey = $this->params->get('public_key', '');
